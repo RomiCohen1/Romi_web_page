@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Romi</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/v3/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/v3/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/v3/favicon-16x16.png">
+  <link rel="manifest" href="favicons/v3/site.webmanifest">
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Assistant Professor, Reichman University. Works at the intersection of computer graphics, computer vision, and HCI, with focus on tools, algorithms, and new paradigms for photo and video editing.">
+  <meta name="keywords" content="ohad,fried,ohad fried,research,IDC Herzliya,Reichman University,stanford,graphics,computer graphics,vision,computer vision,computer science,HCI,human computer interaction,neural rendering,deepfakes,perspective distortion,distractors,image distractors,selfie effect,patch2vec,princeton,portraits,photo recoloring,IsoMatch,AudioQuilt,sound mapping,texture synthesis,brown institute,siebel,adobe,google,SIGGRAPH">
+  <meta name="author" content="Ohad Fried">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="all">
+
+  <!-- The following pattern defers CSS loading, making page load much faster -->
+  <link rel="preload" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"></noscript>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" defer></script>
+
+  <link rel="stylesheet" type="text/css" href="cv.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+
+  <!-- Use FontAwesome for (most) icons -->
+  <script src="https://kit.fontawesome.com/2a7f8c9d6d.js" defer crossorigin="anonymous"></script>
+
+  <script src="logical.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img id="me" loading=lazy alt="A photo of Romi Cohen" src="images/me1-modified.png">
+      <a href="#">Romi Cohen</a>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation bar">
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-label="home"><i class="fa-solid fa-house" aria-hidden="true"></i></a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="employment.html">Employment</a></li>
+        <li><a href=hobbies.html>Hobbies</a></li>
+        <li><a href="mailto:romicohen1@gmail.com" aria-label="email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+        <li><button id="light" onclick="light_handler();"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i></button></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span>
+        <i class="fa fa-bars fa-lg"></i>
+      </span>
+    </label>
+  </header>
+
+  <div id="page-wrap">
+    <div class="clear"></div>
+    <div class="clear"></div>
+    <div class="clear"></div>
+      <div class="container">
+        <h1 id="about">About Me</h1><br>
+        <div>
+          <p>
+            I'm 24 years old and live in Herzliya with my family.<br>
+            My father, Aviran, is a lawyer and entrepreneur, the owner of the company <a href="https://eitanim-nadlan.co.il/" target="_blank">"Eitanim".</a><br>
+            My mother, Tammy, is a kindergarten teacher in her private kindergarten.
+          </p><br>
+          <p>
+            My brothers and I are very close and usually like to hang out together when everyone is home on the weekends.<br>
+            My sister Noya, is 20 years old and currently serves in the army in unit 8200.<br>
+            My brother Eitan is 19 years old and is currently in a training course in the Medical Corps.<br>
+          </p><br>
+
+
+
+          <p>
+            We have a lot of cats in our garden, and we all like to feed them and to take care of them, especially when it's cold and they don't have anyone to take care of them.<br>
+            We sometimes give them blankets and even take them to the veterinarian when they get ill.
+          </p>
+        </div>
+        <br>
+        <br>
+        <div>
+          <h4>Here are some pictures of cats that I would love to have when I'll get older :)</h4>
+        </div>
+        <div class="live_gallery">
+          <div class="slide fade">
+            <img class="img_live" src="images/cats1.png" alt="Image 1" style="width: 100%">
+          </div>
+
+          <div class="slide fade">
+            <img class="img_live" src="images/cat.png" alt="Image 2" style="width: 100%">
+          </div>
+          <div class="slide fade">
+            <img class="img_live" src="images/cats2.jpg" alt="Image 3" width="400" height="600" style="width: 100%">
+          </div>
+
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+          <script>
+            let index = 0;
+            gallery_handler();
+          </script>
+
+
+          <div class="clear"></div>
+        </div><br>
+      </div>
+  </div>
+
+
+</body>
+</html>
