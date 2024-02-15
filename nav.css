@@ -36,6 +36,11 @@ header {
   border-bottom: 1px solid var(--border);
 }
 
+#light {
+  background-color: var(--background);
+  border: none;
+}
+
 /* Make the checkbox invisible, as we will click on the label and not the checkbox.
    This is better than visibility: hidden since it keeps it selectable by tabbing. */
 .nav-toggle {

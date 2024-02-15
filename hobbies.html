@@ -16,9 +16,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="all">
 
-    <link rel="stylesheet" type="text/css" href="../../cv.css">
-    <link rel="stylesheet" type="text/css" href="../../nav.css">
+    <link rel="stylesheet" type="text/css" href="cv.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
     <link rel="stylesheet" type="text/css" href="gallery.css">
+
+    <script src="logical.js"></script>
 
     <!-- Use FontAwesome for (most) icons -->
     <script src="https://kit.fontawesome.com/2a7f8c9d6d.js" defer crossorigin="anonymous"></script>
@@ -34,13 +36,14 @@
         <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation bar">
         <nav>
             <ul>
-                <li><a href="#" aria-label="home"><i class="fa-solid fa-house" aria-hidden="true"></i></a></li>
+                <li><a href="index.html" aria-label="home"><i class="fa-solid fa-house" aria-hidden="true"></i></a></li>
                 <li><a href="index.html">About</a></li>
                 <li><a href="education.html">Education</a></li>
                 <!--<li><a href="#preprints">Publications</a></li>-->
                 <li><a href="employment.html">Employment</a></li>
                 <li><a href=#>Hobbies</a></li>
                 <li><a href="mailto:romicohen1@gmail.com" aria-label="email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+<!--                <li><button id="light" onclick="light_handler();"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i></button></li>-->
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -77,18 +80,9 @@
 
             </div>
         </div>
-    <!--    <div class="container">-->
         <br>
         <div class="titles_gallery">
         <h1>My gallery</h1><br> </div>
-    <!--    <div class="responsive">-->
-    <!--        <div class="gallery">-->
-    <!--            <a target="_blank" href="images-responsive/solo312.jpg">-->
-    <!--                <img src="images-responsive/solo312.jpg" alt="solo_ballet" width="600" height="400">-->
-    <!--            </a>-->
-    <!--            <div class="desc">My ballet performance</div>-->
-    <!--        </div>-->
-    <!--    </div>-->
         <br>
         <div class="responsive">
             <div class="gallery">
@@ -106,39 +100,13 @@
                 <div class="desc">My solo ballet performance - "Paquita"</div>
             </div>
         </div>
-    <!--        <div class="responsive">-->
-    <!--            <div class="gallery">-->
-    <!--                <a target="_blank" href="images-responsive/solo_front_square1.jpg">-->
-    <!--                    <img src="images-responsive/solo_front_square1.jpg" alt="solo_front" width="329" height="400">-->
-    <!--                </a>-->
-    <!--                <div class="desc">My ballet performance</div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-
-    <!--        <div class="responsive">-->
-    <!--            <div class="gallery">-->
-    <!--                <a target="_blank" href="images-responsive/israeli_ballet_square1.jpg">-->
-    <!--                    <img src="images-responsive/israeli_ballet_square1.jpg" alt="israeli_ballet" width="382" height="400">-->
-    <!--                </a>-->
-    <!--                <div class="desc">A ballet class at the "Israeli Ballet"</div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-
-    <!--        <div class="responsive">-->
-    <!--            <div class="gallery">-->
-    <!--                <a target="_blank" href="images-responsive/modern1.jpg">-->
-    <!--                    <img src="images-responsive/modern1.jpg" alt="modern_dance" width="600" height="400">-->
-    <!--                </a>-->
-    <!--                <div class="desc">A ballet class at the "Israeli Ballet"</div>-->
-    <!--            </div>-->
-    <!--        </div>-->
 
         <div class="responsive">
             <div class="gallery">
                 <a target="_blank" href="../../images-responsive/modern12.jpg">
                     <img src="../../images-responsive/modern11.jpg" alt="modern_dance" width="600" height="400">
                 </a>
-                <div class="desc">My duet modern performance</div>
+                <div class="desc">My duet performance</div>
             </div>
         </div>
 
@@ -147,12 +115,13 @@
                 <a target="_blank" href="../../images-responsive/modern21.jpg">
                     <img src="../../images-responsive/modern2.jpg" alt="modern_dance" width="600" height="400">
                 </a>
-                <div class="desc">Modern performance</div>
+                <div class="desc">Contemporary performance</div>
             </div>
         </div>
 
         <div class="clearfix"></div>
         <br>
+
             <div class="container">
                 <div class="dance_text">
                     <h2>Want to learn more?</h2>

@@ -20,25 +20,27 @@
     <link rel="stylesheet" type="text/css" href="nav.css">
     <link rel="stylesheet" type="text/css" href="gallery.css">
 
+    <script src="logical.js" defer></script>
+
     <!-- Use FontAwesome for (most) icons -->
     <script src="https://kit.fontawesome.com/2a7f8c9d6d.js" defer crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-<!--            <img id="me" loading=lazy alt="A photo of Ohad Fried" src="../../images/me2.png" srcset="images-responsive/me2-100w.png 100w, images-responsive/me2-200w.png 200w, images-responsive/me2-300w.png 300w, images-responsive/me2-400w.png 400w, images-responsive/me2-500w.png 500w, images-responsive/me2-600w.png 600w, images-responsive/me2-700w.png 700w, images-responsive/me2-800w.png 800w, images-responsive/me2-900w.png 900w, images-responsive/me2-2316w.png 2316w" sizes="100px">-->
             <img id="me" loading=lazy alt="A photo of Romi Cohen" src="images/me1-modified.png">
             <a href="#">Romi Cohen</a>
         </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation bar">
         <nav>
             <ul>
-                <li><a href="#" aria-label="home"><i class="fa-solid fa-house" aria-hidden="true"></i></a></li>
+                <li><a href="index.html" aria-label="home"><i class="fa-solid fa-house" aria-hidden="true"></i></a></li>
                 <li><a href="index.html">About</a></li>
                 <li><a href="#">Education</a></li>
                 <li><a href="employment.html">Employment</a></li>
                 <li><a href=hobbies.html>Hobbies</a></li>
                 <li><a href="mailto:romicohen1@gmail.com" aria-label="email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+                <li><button id="light" onclick="light_handler();"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i></button></li>
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -60,8 +62,8 @@
             <div class="grid-container">
                 <h1>Education</h1><br>
                 <div class="publication_figure">
-                     <img loading=lazy alt="" src="images/reichman.png" srcset="images-responsive/reichman-100w.png 100w, images-responsive/reichman-200w.png 200w, images-responsive/reichman-300w.png 300w, images-responsive/reichman-400w.png 400w, images-responsive/reichman-500w.png 500w, images-responsive/reichman-700w.png, 700w, images-responsive/reichman-900w.png 900w, images-responsive/reichman-1570.png 1570w" sizes="250px">
-    <!--                <img loading=lazy alt="" src="images/taming.png" srcset="images-responsive/taming-100w.png 100w, images-responsive/taming-200w.png 200w, images-responsive/taming-300w.png 300w, images-responsive/taming-400w.png 400w, images-responsive/taming-500w.png 500w, images-responsive/taming-600w.png 600w, images-responsive/taming-700w.png 700w, images-responsive/taming-800w.png 800w, images-responsive/taming-900w.png 900w, images-responsive/taming-1570w.png 1570w" sizes="250px">-->
+<!--                     <img loading=lazy alt="" src="images/reichman.png" srcset="images-responsive/reichman-100w.png 100w, images-responsive/reichman-200w.png 200w, images-responsive/reichman-300w.png 300w, images-responsive/reichman-400w.png 400w, images-responsive/reichman-500w.png 500w, images-responsive/reichman-700w.png, 700w, images-responsive/reichman-900w.png 900w, images-responsive/reichman-1570.png 1570w" sizes="250px">-->
+                    <img class="image-education" src="images/reichman.png" alt="reichman">
                 </div>
                 <div class="container_text">
                     <b>Bachelor’s student in computer science</b> <br>
@@ -75,8 +77,7 @@
                 </div>
 
                 <div class="publication_figure">
-    <!--                <img loading=lazy alt="" src="images/handesaim.jpg" srcset="images-responsive/handesaim-100w.jpg 100w" sizes="150px">-->
-                    <img loading=lazy alt="" src="images/taming.png" srcset="images-responsive/taming-100w.png 100w, images-responsive/taming-200w.png 200w, images-responsive/taming-300w.png 300w, images-responsive/taming-400w.png 400w, images-responsive/taming-500w.png 500w, images-responsive/taming-600w.png 600w, images-responsive/taming-700w.png 700w, images-responsive/taming-800w.png 800w, images-responsive/taming-900w.png 900w, images-responsive/taming-1570w.png 1570w" sizes="250px">
+                    <img class="image-education" src="images/handesaim1.png" alt="Handesaim">
                 </div>
 
                 <div class="publication_text">
