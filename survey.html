@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Romi @Contact</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/v3/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/v3/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/v3/favicon-16x16.png">
+    <link rel="manifest" href="favicons/v3/site.webmanifest">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Dance as a way of life">
+    <meta name="keywords" content="Ballet,modern,dance,bachata,salsa,Romi,Cohen,romi cohen">
+    <meta name="author" content="Romi Cohen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all">
+
+    <link rel="stylesheet" type="text/css" href="../../cv.css">
+    <link rel="stylesheet" type="text/css" href="../../nav.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+
+    <!-- Use FontAwesome for (most) icons -->
+    <script src="https://kit.fontawesome.com/2a7f8c9d6d.js" defer crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img id="me" loading=lazy alt="A photo of Romi Cohen" src="images/me1-modified.png">
+        <a href="#">Romi Cohen</a>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation bar">
+    <nav>
+        <ul>
+            <li><a href="#" aria-label="home"><i class="fa-solid fa-house" aria-hidden="true"></i></a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <!--<li><a href="#preprints">Publications</a></li>-->
+            <li><a href="employment.html">Employment</a></li>
+            <li><a href=hobbies.html>Hobbies</a></li>
+            <li><a href="mailto:romicohen1@gmail.com" aria-label="email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span>
+        <i class="fa fa-bars fa-lg"></i>
+      </span>
+    </label>
+</header>
+
+<div class="page-wrap">
+    <div class="clear"></div>
+    <div>
+        <img id="image-ballet" src="images/hobbies-feature.jpg" alt="">
+    </div>
+    <div class="container">
+
+        <div class="container_text">
+            <h1>Survey</h1>
+            <br>
+            <p>
+                Answer the survey and you might win extraordinary prizes!
+            </p><br>
+            <form action="index.html" method="post" target="_blank">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                <label for="phone">Phone number:<br/>
+                    <small>Format: 052-345-6789</small><br>
+                </label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <br><br>
+
+                <p>Gender:</p>
+                <input type="radio" id="Female" name="Gender" value="f">
+                <label for="Female">Female</label>
+                <input type="radio" id="Male" name="Gender" value="m">
+                <label for="Male">Male</label>
+                <input type="radio" id="None" name="Gender" value="n">
+                <label for="None">None</label><br><br>
+
+                <p>Have you ever tried a dance class?</p>
+                <input type="radio" id="Yes" name="first_ex" value="Yes">
+                <label for="Yes">Yes</label>
+                <input type="radio" id="No" name="first_ex" value="No">
+                <label for="No">No</label><br><br>
+
+                <p>If you had a chance to take a dance class, what class would you choose? (possible multiple options)</p>
+                <input type="checkbox" id="class1" name="class1" value="ballet">
+                <label for="class1"> Ballet class</label><br>
+                <input type="checkbox" id="class2" name="class2" value="contemporary">
+                <label for="class2"> Contemporary class</label><br>
+                <input type="checkbox" id="class3" name="class3" value="bachata">
+                <label for="class3"> Bachata class</label><br>
+                <input type="checkbox" id="class4" name="class3" value="bachata">
+                <label for="class4"> Salsa class</label><br>
+                <input type="checkbox" id="class5" name="class5" value="o">
+                <label for="class5"> I would take a different dance class</label><br>
+                <input type="checkbox" id="class6" name="class6" value="n">
+                <label for="class6"> I don't want to dance</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <br>
+</div>
+
+
+
+</body>
+</html>
