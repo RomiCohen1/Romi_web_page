@@ -7,6 +7,7 @@ html {
   scroll-behavior: smooth;
   /* scroll-padding-top: max(3.5rem, 6vh); */
   scroll-padding-top: 7em;
+
 }
 
 /* offset scroll target to compensate for the page header */
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-  font: clamp(12px, 1vmax, 16px) Trebuchet MS, Arial, sans-serif;
+  font: clamp(14px, 1vmax, 16px) Trebuchet MS, Arial, sans-serif;
 	line-height: 1.7;
 	background: white;
 	letter-spacing: 0.03em;
