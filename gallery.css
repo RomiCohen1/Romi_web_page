@@ -7,6 +7,17 @@ html {
     scroll-padding-top: 7em;
 }
 
+p{
+    font: clamp(14px, 1vmax, 16px) Trebuchet MS, Arial, sans-serif;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .page-wrap{
     background-color: #e3e2e2;
 }
@@ -107,9 +118,10 @@ html {
 
 /*only for live gallery in index.html*/
 .live_gallery{
-    max-width: 1000px;
-    position: relative;
-    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .img_live{
@@ -117,10 +129,10 @@ html {
 }
 
 .slide {
-    max-width: 1000px;
-    position: relative;
     margin: 40px;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dot {
@@ -143,6 +155,7 @@ html {
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+
 }
 
 @keyframes fade {

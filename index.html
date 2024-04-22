@@ -37,91 +37,102 @@
 
 <body>
 
-  <header>
-    <div class="logo">
-      <img id="me" loading=lazy alt="A photo of Romi Cohen" src="images/me1-modified.png">
-      <a href="#">Romi Cohen</a>
-    </div>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation bar">
-    <nav>
-      <ul>
-        <li><a href="index.html" aria-label="home"><i class="fa-solid fa-house" aria-hidden="true"></i></a></li>
-        <li><a href="index.html">About</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="employment.html">Employment</a></li>
-        <li><a href=hobbies.html>Hobbies</a></li>
-        <li><a href="mailto:romicohen1@gmail.com" aria-label="email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
-<!--        <li><button id="light" onclick="light_handler();"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i></button></li>-->
-        <li><button id="light" onclick="light_handler()"><img src="images/light.png" alt="mode" width="9px" height="9px"></button> </li>
-      </ul>
-    </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
+<header>
+  <div class="logo">
+    <img id="me" loading=lazy alt="A photo of Romi Cohen" src="images/me1-modified.png">
+    <a href="#">Romi Cohen</a>
+  </div>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation bar">
+  <nav>
+    <ul>
+      <li><a href="index.html" aria-label="home"><i class="fa-solid fa-house" aria-hidden="true"></i></a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="employment.html">Employment</a></li>
+      <li><a href=hobbies.html>Hobbies</a></li>
+      <li><a href="mailto:romicohen1@gmail.com" aria-label="email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+      <!--        <li><button id="light" onclick="light_handler();"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i></button></li>-->
+      <li><button id="light" onclick="light_handler()"><img src="images/light.png" alt="mode" width="9px" height="9px"></button> </li>
+    </ul>
+  </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
       <span>
         <i class="fa fa-bars fa-lg"></i>
       </span>
-    </label>
-  </header>
+  </label>
+</header>
 
+<!--  <div class="clear"></div>-->
+<!--  <div class="clear"></div>-->
+<!--  <div class="clear"></div>-->
+
+<div class="page-wrap">
   <div class="clear"></div>
-  <div class="clear"></div>
-  <div class="clear"></div>
-
-  <div id="page-wrap">
-      <div class="container">
-        <h1 id="about">About Me</h1><br>
-        <div>
-          <p>
-            I'm 24 years old and live in Herzliya with my family.<br>
-            My father, Aviran, is a lawyer and entrepreneur, the owner of the company <a href="https://eitanim-nadlan.co.il/" target="_blank">"Eitanim".</a><br>
-            My mother, Tammy, is a kindergarten teacher in her private kindergarten.
-          </p><br>
-          <p>
-            My brothers and I are very close and usually like to hang out together when everyone is home on the weekends.<br>
-            My sister Noya, is 20 years old and currently serves in the army in unit 8200.<br>
-            My brother Eitan is 19 years old and is currently in a training course in the Medical Corps.<br>
-          </p><br>
-
-
-
-          <p>
-            We have a lot of cats in our garden, and we all like to feed them and to take care of them, especially when it's cold and they don't have anyone to take care of them.<br>
-            We sometimes give them blankets and even take them to the veterinarian when they get ill.
-          </p>
-        </div>
-        <br>
-        <br>
-        <div>
-          <h4>Here are some pictures of cats that I would love to have when I'll get older :)</h4>
-        </div>
-        <div class="live_gallery">
-          <div class="slide fade">
-            <img class="img_live" src="images/cats1.png" alt="Image 1" style="width: 100%">
-          </div>
-
-          <div class="slide fade">
-            <img class="img_live" src="images/cat.png" alt="Image 2" style="width: 100%">
-          </div>
-          <div class="slide fade">
-            <img class="img_live" src="images/cats2.jpg" alt="Image 3" width="400" height="600" style="width: 100%">
-          </div>
-
-          <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-
-          <script>
-            let index = 0;
-            gallery_handler();
-          </script>
-
-
-          <div class="clear"></div>
-        </div><br>
-      </div>
+  <div>
+    <img id="image-ballet" src="images/about_me.jpg" alt="">
   </div>
+  <div class="container">
 
+    <div class="dance_text">
+      <h1 id="about">About Me</h1><br>
+
+      <p>
+        I'm 24 years old and live in Herzliya with my family.<br>
+        My father, Aviran, is a lawyer and entrepreneur, the owner of the company <a href="https://eitanim-nadlan.co.il/" target="_blank">"Eitanim".</a><br>
+        My mother, Tammy, is a kindergarten teacher in her private kindergarten.
+      </p><br>
+      <p>
+        My brothers and I are very close and usually like to hang out together when everyone is home on the weekends.<br>
+        My sister Noya, is 20 years old and currently serves in the army in unit 8200.<br>
+        My brother Eitan is 19 years old and is currently in a training course in the Medical Corps.<br>
+      </p><br>
+
+      <p>
+        One of the things we love to do as a family is travel.<br>
+        Here are some beautiful pictures I took during my treks in Peru:
+      </p>
+      <br>
+      <br>
+
+      <div class="live_gallery">
+        <div class="slide fade">
+          <img class="img_live" src="images/peru1.jpg" alt="Image 1" style="width: 100%">
+        </div>
+
+        <div class="slide fade">
+          <img class="img_live" src="images/peru2.jpg" alt="Image 2" style="width: 100%">
+        </div>
+        <div class="slide fade">
+          <img class="img_live" src="images/peru3.jpg" alt="Image 3" style="width: 100%">
+        </div>
+        <div class="slide fade">
+          <img class="img_live" src="images/peru4.jpg" alt="Image 4" style="width: 100%">
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <script>
+          let index = 0;
+          gallery_handler();
+        </script>
+
+
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="clearfix"></div>
+  <br>
+  <br>
+  <br>
+</div>
 
 </body>
 </html>
