@@ -39,6 +39,7 @@ header {
 #light {
   background-color: var(--background);
   border: none;
+  cursor: pointer;
 }
 
 /* Make the checkbox invisible, as we will click on the label and not the checkbox.
